@@ -1,3 +1,75 @@
+/************************************/
+/*         Imports police           */
+/************************************/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+/************************************/
+/*        Styles généraux           */
+/************************************/
+:root{
+    /* Polices */
+    --police-titre: 'Krona One', sans-serif;
+    --police-corps: 'Shippori Antique B1', sans-serif;
+
+    /* Couleurs */
+    --texte-1: #FFFFFF;
+    --texte-2: #BC5F04;
+    --fond-general: #2C2F33;
+    --fond-bv: #5865F2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: lightgray;
+    background-color: var(--fond-general);
+}
+
+/************************************/
+/*       Barre de navigation        */
+/************************************/
+header{
+    margin: 2em 5em;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin: 0px 5em;
+}
+
+header nav ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-family: var(--police-titre);
+    color: var(--texte-1);
+}
+
+#se-co{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    list-style:none;
+    background-color: var(--fond-bv);
+    height: 3em;
+    border-radius: 20px;
+}
+
+#se-co2{
+    font-family: var(--police-titre);
+    text-decoration: none;
+    color: var(--texte-1);
 }
