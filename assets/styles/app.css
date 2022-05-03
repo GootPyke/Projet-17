@@ -59,16 +59,16 @@ header nav ul li a{
 }
 
 #se-co{
-    display: flex;
-    align-items:center;
-    justify-content:center;
     list-style:none;
-    background-color: var(--fond-bv);
-    height: 3em;
-    border-radius: 20px;
 }
 
 #se-co2{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 20px;
+    height: 3em;
+    background-color: var(--fond-bv);
     font-family: var(--police-titre);
     text-decoration: none;
     color: var(--texte-1);
