@@ -112,7 +112,14 @@ class UtilisateurRepository extends ServiceEntityRepository implements PasswordU
         $user->setDiscordID($discordID)
             ->setDiscordUsername($discordUsername)
             ->setEmail($email)
-            ->setIsVerified(true);
+            ->setIsVerified(true)
+            ->setPassword($randomPassword);
+
+        $this->_em->persist($user);
+
+        $this->_em->flush();
+
+        return $user;
     }
 
     // /**
